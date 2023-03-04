@@ -1,0 +1,160 @@
+
+
+
+.segment1-container {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.segment1-items {
+    height: auto;
+}
+
+
+.segment1-items a {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3b3b3b;
+    text-decoration: none;
+    border-radius: 1rem;
+
+}
+
+
+.segment1-items h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+.segment1-items h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+
+.segment1-items a:hover {
+    transform: scale(101%);
+}
+
+.segment1 img {
+    width: 100%;
+    max-width: 1920px;
+}
+
+
+.segment2 {
+    z-index: 2;
+    width: 100%;
+}
+
+
+.segment2-title {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.segment2-title li {
+    margin: 0 3rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: transparent solid 0.2rem;
+
+    
+}
+
+.segment2-title li:hover {
+    border-bottom: var(--grey) solid 0.2rem;
+    position: relative;
+}
+
+.segment2-title .active {
+    border-bottom: var(--grey) solid 0.2rem;
+
+}
+
+
+.segment2-container {
+    width: 100%;
+}
+
+.segment2-container {
+    height: auto;
+}
+
+.segment2-item-container-textholder {
+    width: 100%;
+    height: 725px;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.segment2-item-container-textholder div  {
+    padding: 3rem;
+    width: 30%;
+}
+
+
+
+
+.segment2-item-container-textholder a {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3b3b3b;
+    text-decoration: none;
+    border-radius: 1rem;
+
+}
+
+
+.segment2-item-container-textholder h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+.segment2-item-container-textholder h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.segment2-item-container-textholder a:hover {
+    transform: scale(101%);
+}
+
+
+
+@media  screen and (max-width: 1279px) {
+    
+
+    
+
+}

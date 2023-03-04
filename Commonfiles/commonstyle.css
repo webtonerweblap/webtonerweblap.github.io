@@ -1,0 +1,670 @@
+:root {
+    --black: #000000;
+    --yellow: #fecc02;
+    --white: #ffffff;
+    --grey: #3b3b3b;
+}
+
+
+* {
+    overflow-x: hidden;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    color: var(--black);
+    width: 99.5vw;
+    margin: 0;
+    background-color: var(--white);
+}
+
+
+
+
+body::-webkit-scrollbar {
+    background-color: var(--white);
+    width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+    border-radius: 2rem;
+}
+
+
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: var(--white);
+    z-index: 90;
+}
+
+
+
+
+
+
+
+
+
+.menu li a, .submenu li a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.5s ease-in;
+
+}
+
+
+
+.menu li a:hover, .submenu li a:hover {
+    color: var(--yellow);
+    transition: 0.5s ease-in;
+}
+
+
+.menu, .submenu {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+}
+
+.menu li {
+    margin: 1.25rem;
+
+}
+
+.menu li a span svg {
+    width: 1.5rem;
+    height: auto;
+    margin-bottom: 0.3rem;
+}
+
+.menu li a:hover span svg {
+    fill: var(--yellow);
+    transition: 0.5s ease-in;
+
+}
+
+.submenu {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.submenu li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submenu {
+
+    transition: 0.5s ease-in;
+    display: none;
+    z-index: 10;
+
+}
+
+.menu li:hover > .submenu {
+    display: flex;
+    transition: 0.5s ease-in;
+}
+
+
+.submenu:hover {
+    display: flex;
+
+}
+
+header img {
+    z-index: 100;
+    position: relative;
+    height: 7.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.submenu img {
+    transition: 0.5s ease-in;
+    height: 15rem;
+}
+
+.submenu li a:hover > img {
+    transition: 0.5s ease-in;
+    filter: opacity(50%);
+}
+
+
+
+.iconbar {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    margin: 0.2rem;
+    margin-right: 1rem;
+
+}
+
+.iconbar svg {
+    width: 2rem;
+    margin: 0.2rem;
+    transition: 0.5s ease-in;
+    fill: var(--black);
+}
+
+.iconbar svg:hover {
+    transition: 0.5s ease-in;
+    fill: var(--yellow);
+}
+
+
+
+
+#contactinfo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 6.8rem;
+    z-index: 12;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+    border-radius: 2rem;
+    z-index: 101;
+
+
+
+}
+
+
+.contactinfo svg {
+    fill: var(--black);
+
+}
+
+
+
+#arrow {
+    margin-left: 0.3rem;
+}
+
+
+#close {
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.downicon svg {
+    fill: var(--black);
+
+    transition: 0.5s ease;
+}
+
+
+
+
+@keyframes downanim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ a:hover > span svg {
+    transition: 0.6s ease-in;
+    animation: downanim 0.6s;
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+main {
+    width: 100%;
+    height: auto;    
+    padding: 0;
+    margin: 7.7rem 0 0 0;
+    max-width: 1920px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+
+
+.footer-links ul {
+    list-style: none;
+
+}
+
+.footer-links ul li {
+    padding: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s ease;
+    font-size: 1.5rem;
+}
+
+.footer-links ul li a:hover {
+    color: var(--yellow);
+    transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+.socialicons {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.socialicons a {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: 0.6s ease-in;
+    font-size: 1.5rem;
+}
+
+footer svg {
+    width: clamp(20px, 1.5rem, 100px);
+    height: clamp(20px, 1.5em, 100px);
+    transition: 0.6s;
+    fill: var(--white);
+    z-index: 2;
+    margin-right: 0.7rem;
+}
+
+.socialicons a:hover {
+    color: var(--yellow);
+    transition: 0.6s ease-in;
+}
+
+.socialicons a:hover >svg {
+    fill: var(--yellow);
+    transition: 0.6s ease-in;
+}
+
+
+
+
+
+
+
+#upicon {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+
+upicon a svg {
+    fill: var(--white);
+    background-color: var(--yellow);
+    position: fixed;
+    bottom: 4.2rem;
+    right: 4.2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 3rem;
+    padding: 0.7rem;
+    z-index: 2;
+    border: 0.2rem solid var(--yellow);
+}
+
+upicon a svg:hover {
+    transform: scale(103%);
+}
+
+
+
+
+
+
+
+#mobile-navbar {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+#mobile-navbar ul {
+    list-style: none;
+}
+
+#mobile-navbar ul li {
+    text-align: center;
+    padding: 0.5rem;
+
+}
+
+#mobile-navbar ul li a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in;
+
+}
+
+#mobile-navbar ul li a:hover {
+    color: var(--yellow);
+    transition: 0.5s ease-in;
+}
+
+.toggle {
+    display: none;
+}
+
+
+@media screen and (max-width: 1279px) {
+    :root {
+        font-size: 14px;
+    }
+
+
+    .toggle {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 110;
+        cursor: pointer;
+
+    }
+
+    header {
+        flex-direction: column;
+        min-height: calc(2rem + 7.5rem);
+    }
+
+    .toggle svg {
+        fill: var(--yellow);
+        width: 5rem;
+        margin: 1.5rem;
+    }
+
+
+    .iconbar {
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        right: 0;
+        margin: 1.5rem;
+        margin-right: 8rem;
+    
+    }
+    
+    .iconbar svg {
+        width: 3rem;
+        margin: 0.5rem;
+        fill: var(--yellow);
+    }
+    
+    .iconbar svg:hover {
+        fill: var(--black);
+    }
+    
+    header img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 1rem;
+    }
+    
+    
+    
+    #contactinfo {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 17rem;
+        background-color: var(--yellow);
+        display: flex;
+        align-items: center;
+        padding: 0.2rem 0.7rem;
+        font-size: 2rem;
+        margin-top: 1.7rem;
+        border-radius: 2rem;
+        z-index: 101;
+    
+    
+    
+    }
+    
+    
+    .contactinfo svg {
+        fill: var(--black);
+    
+    }
+    
+    #close svg {
+        width: 2rem;
+        height: auto;
+        margin-top: 0.2rem;
+        margin-right: 0.5rem;
+    }
+    
+    #arrow svg {
+        margin-left: 0.3rem;
+        width: 2rem;
+        height: auto;
+    }
+    
+    
+
+    
+
+
+
+    .desktop-navbar {
+        display: none;
+    }
+
+
+    .footer-links {
+        margin-left: -2rem;
+        font-size: 1.8rem;
+    }
+
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer svg {
+        width: clamp(15px, 1.45rem, 100px);
+        height: clamp(15px, 1.45rem, 100px);
+        margin: clamp(3px, 0.2rem, 80px);
+    }
+
+    footer p {
+        font-size: clamp(10px, 1.2rem, 60px);
+        margin: 0.5rem 2rem;
+    }
+
+    upicon a svg {
+        bottom: 3rem;
+        right: 3rem;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 2200px) {
+
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 35cm) {
+
+    :root {
+        font-size: 10px;
+    }
+}
