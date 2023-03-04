@@ -1,3 +1,9 @@
+setTimeout(function() {
+    elements2 = document.getElementsByClassName("segment2-item-container");
+    element2 = elements2[0];
+    element2.style.display = "block"; 
+  }, 1);
+
 
 
 function SliderActivate(index) {
@@ -22,6 +28,5 @@ function SliderActivate(index) {
         }
     }
 }
-
 
 
