@@ -483,6 +483,7 @@ upicon a svg:hover {
 }
 
 #mobile-navbar ul {
+    margin-top: 10rem;
     list-style: none;
 }
 
@@ -582,6 +583,9 @@ upicon a svg:hover {
         margin-top: 1.7rem;
         border-radius: 2rem;
         z-index: 101;
+        
+        
+        display: none;
     
     
     
@@ -643,6 +647,8 @@ upicon a svg:hover {
     upicon a svg {
         bottom: 3rem;
         right: 3rem;
+        width: 3rem;
+        height: 3rem;
     }
 
 
