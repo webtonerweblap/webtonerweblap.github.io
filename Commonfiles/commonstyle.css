@@ -265,7 +265,8 @@ header img {
 
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (orientation: landscape) {
+
 
     :root {
         font-size: 12px;
@@ -284,7 +285,6 @@ main {
     height: auto;    
     padding: 0;
     margin: 7.7rem 0 0 0;
-    max-width: 1920px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -513,7 +513,7 @@ upicon a svg:hover {
 }
 
 
-@media screen and (max-width: 1279px) {
+@media screen and (orientation: portrait) {
     :root {
         font-size: 14px;
     }
@@ -666,6 +666,7 @@ upicon a svg:hover {
     :root {
         font-size: 16px;
     }
+
 }
 
 @media screen and (max-width: 35cm) {

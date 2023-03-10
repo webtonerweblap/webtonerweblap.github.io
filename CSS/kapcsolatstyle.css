@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--yellow);
+}
+
+fieldset {
+    margin: 1rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.4rem solid var(--yellow);
+    border-radius: 2rem;
+}
+
+h3 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+
+button {
+    width: fit-content;
+    height: auto;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding: 1rem;
+    background-color: var(--yellow);
+    border: transparent
+}
+
+input:focus {
+    border: 0.3rem solid var(--yellow);
+}
