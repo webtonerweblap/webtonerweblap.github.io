@@ -1,0 +1,227 @@
+.segment1-textholder {
+    padding: 2rem 5rem;
+}
+
+
+.segment1-textholder h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.segment1-textholder h3 { 
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+
+
+
+.segment3 {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+.segment3-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.segment3-container img {
+    width: 100%;
+}
+
+.segment3-container p {
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.segment3-textholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segment3-textholder p img {
+    width: 1.5rem;
+    top: 0.25rem;
+    position: relative;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+
+.big {
+    top: 5%;
+    left: 5%;
+    position: fixed;
+    z-index: 200;
+    width: 90vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: auto;
+}
+
+.big img {
+    width: 100%;
+}
+
+.big p {
+    display: inline;
+    font-weight: bold;
+    margin: 0 5rem;
+    font-size: 2rem;
+    
+}
+
+.big .segment3-textholder {
+    top: 4rem;
+    display: block;
+    position: relative;
+
+}
+
+
+.big p img {
+    width: 2rem;
+    top: 0.25rem;
+    position: relative;
+}
+
+
+#backgroundblur {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 150;
+    top: 0;
+    left: 0;
+}
+
+.imgclose {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+.imgclose:hover {
+    transform: scale(103%);
+}
+
+
+.imgclose svg {
+    width: 2rem;
+    height: auto;
+
+}
+
+
+#segment3-title, .segment4 h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+.segment4 h1 {
+    margin: 5rem 0 3rem 0;
+}
+
+
+.segment4 {
+    width: 80%;
+
+}
+
+.segment4-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.segment4-links a {
+    padding: 1rem;
+}
+
+
+
+.segment5 {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem 0 5rem 0;
+}
+
+.segment5-container {
+    max-width: 30%;
+    overflow: visible;
+    margin: 0 7rem;
+}
+
+.segment5-container a {
+    background-color: var(--yellow);
+    padding: 1.5rem;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3b3b3b;
+    text-decoration: none;
+    border-radius: 1rem;
+
+}
+
+.segment5-container a:hover {
+    transform: scale(101%);
+}
+
+.segment5-container h1 {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 3rem 0 1rem 0;
+}
+
+.segment5-container p {
+    font-size: 1.5rem;
+}
+
+
+.segment5-container svg {
+    position: relative;
+    width: 5rem;
+    top: -65%;
+    left: -6rem;
+}
+
+
+
+.segment4-links-2db {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 20% 20% 30%;
+}
