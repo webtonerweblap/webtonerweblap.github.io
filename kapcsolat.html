@@ -169,38 +169,57 @@
 
     <main>
 
-        <fieldset>
-            <legend>Árajánlat kérése</legend>
-            <form action="arajanlat.php" method="post">
-                <label for="nev">Név:</label><br>
-                <input type="text" name="nev" id="nev" required> <br>
-                <label for="telefon">Telefonszám:</label><br>
-                <input type="tel" name="telefon" id="telefon" required> <br>
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" required> <br>
-                <label for="varos">Város:</label><br>
-                <input type="text" name="varos" id="varos" required><br>
-                <h3>A választott ház:</h3>
-                <label for="haz">Capri</label>
-                <input type="radio" name="haz" id="haz" value="capri" required> <br>
-                <label for="haz">Murano</label>
-                <input type="radio" name="haz" id="haz" value="murano" required> <br>
-                <label for="haz">Joli</label>
-                <input type="radio" name="haz" id="haz" value="joli" required> <br>
-                <label for="haz">Hollum</label>
-                <input type="radio" name="haz" id="haz" value="hollum" required> <br> <br>
-                <label for="uzenet">Üzenet:</label><br>
-                <textarea name="uzenet" id="uzenet" cols="30" rows="5"></textarea> <br>
-                <button type="submit">Küldés</button>
+
+        <div class="forms-container">
+            <div class="arajanlat">
+                <form action="arajanlat.php" method="post">
+                    <h1>Árajánlat kérése</h1>
+                    <label for="nev">Név:</label><br>
+                    <input type="text" name="nev" id="nev" required> <br>
+                    <label for="telefon">Telefonszám:</label><br>
+                    <input type="tel" name="telefon" id="telefon" required> <br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" required> <br>
+                    <label for="varos">Város:</label><br>
+                    <input type="text" name="varos" id="varos" required><br>
+                    <h3>A választott ház:</h3>
+                    <label for="haz">Capri</label>
+                    <input type="radio" name="haz" id="haz" value="capri" required> <br>
+                    <label for="haz">Murano</label>
+                    <input type="radio" name="haz" id="haz" value="murano" required> <br>
+                    <label for="haz">Joli</label>
+                    <input type="radio" name="haz" id="haz" value="joli" required> <br>
+                    <label for="haz">Hollum</label>
+                    <input type="radio" name="haz" id="haz" value="hollum" required> <br> <br>
+                    <label for="uzenet">Üzenet:</label><br>
+                    <textarea name="uzenet" id="uzenet" cols="30" rows="5"></textarea> <br>
+                    <button type="submit">Küldés</button>
+                </form>
+            </div>
+
+            <div class="video-container">
+                
+
+                <video autoplay loop muted>
+                    <source src="Images/Kapcsolat/background.mp4" type="video/mp4">
+                    <source src="Images/Kapcsolat/background.webm" type="video/webm">
+                </video>
+
+                <h1>Quick Home Hungary</h1>
+            </div>
+
+
+        </div>
 
 
 
 
-            </form>
-        </fieldset>
 
 
 
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.33303157627023!2d20.40562391117999!3d47.8685309148198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474092c08cf5e153%3A0x2af32a4ee514a7ce!2zRWdlciwgS2lzdMOhbHlhaSDDunQgMjU3LCAzMzAw!5e0!3m2!1shu!2shu!4v1678553938178!5m2!1shu!2shu"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
 
         

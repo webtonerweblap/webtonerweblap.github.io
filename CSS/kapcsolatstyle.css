@@ -18,6 +18,8 @@ fieldset {
     align-items: center;
     justify-content: center;
     border: 0.4rem solid var(--yellow);
+    border: none;
+    background-color: #e0e0e065;
     border-radius: 2rem;
 }
 
@@ -32,16 +34,89 @@ label {
 
 
 button {
+    color: var(--white);
     width: fit-content;
     height: auto;
     border-radius: 1rem;
     text-transform: uppercase;
     font-size: 2.3rem;
     padding: 1rem;
-    background-color: var(--yellow);
+    background-color: var(--black);
     border: transparent
 }
 
 input:focus {
     border: 0.3rem solid var(--yellow);
 }
+
+
+.forms-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgba(206, 206, 206, 0.425);
+    border-radius: 5rem;
+}
+
+
+.arajanlat {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.video-container video {
+    filter: opacity(0.4);
+    position: relative;
+    top: 0;
+}
+
+.video-container h1 {
+    position: absolute;
+    top: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map {
+    width: 50%;
+    max-width: 1920px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 30vw;
+    border: none;
+}
+
+
+

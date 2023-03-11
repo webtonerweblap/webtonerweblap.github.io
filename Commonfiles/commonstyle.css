@@ -286,7 +286,7 @@ main {
     padding: 0;
     margin: 7.7rem 0 0 0;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }

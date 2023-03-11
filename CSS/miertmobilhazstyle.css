@@ -1,19 +1,15 @@
 
-.segment1 {
-    overflow: hidden;
-}
-
 .segment1-container {
-    width: 35%;
-    height: 820px;
+    width: 30%;
+    max-width: 700px;
+    height: 725px;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 7.7rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    z-index: 1;
     align-items: center;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.541);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -23,50 +19,72 @@
 }
 
 
-.segment1-items a {
-    background-color: var(--yellow);
-    padding: 1.5rem;
-    display: flex;
-    width: fit-content;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #3b3b3b;
-    text-decoration: none;
-    border-radius: 1rem;
 
-}
 
 
 .segment1-items h1 {
     text-transform: uppercase;
     font-weight: normal;
+    font-size: 2.5rem;
 }
 
 
-.segment1-items h3 {
+.segment2 {
+    width: 100%;
+    max-width: 1920px;
+    padding: 3rem;
+}
+
+.segment2 h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 1rem 3rem 0 3rem;
+}
+
+.segment2 p { 
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 0 3rem;
+}
+
+
+
+
+
+.segment3-container {
+    width: 30%;
+    max-width: 700px;
+    height: 720px;
+    position: relative;
+    top: 7.7rem;
+    display: flex;
+    justify-content: left;
+    z-index: 1;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.segment3-items {
+    margin-left: 2rem;
+    height: auto;
+}
+
+
+
+
+
+.segment3-items h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.segment3-items h3 {
     font-weight: normal;
     font-size: 1.5rem;
 }
-
-
-.segment1-items a:hover {
-    transform: scale(101%);
-}
-
-.segment1 img {
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -80,8 +98,8 @@
 @media screen and (orientation: portrait) {
 
     .segment1 img {
-        transform: translateX(-35%);
-        filter: opacity(10%);
+        transform: translateX(-55%);
+        filter: opacity(20%);
 
     }
 
@@ -99,6 +117,7 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
+        background-color: transparent;
     }
 
 
