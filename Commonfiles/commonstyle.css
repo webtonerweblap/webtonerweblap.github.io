@@ -166,6 +166,7 @@ header img {
 
 
 .iconbar {
+    font-size: 0;
     position: fixed;
     z-index: 11;
     top: 0;
@@ -473,6 +474,7 @@ upicon a svg:hover {
 
 
 #mobile-navbar {
+    position: fixed;    
     width: 100%;
     height: auto;
     background-color: #ffffff;
@@ -483,8 +485,9 @@ upicon a svg:hover {
 }
 
 #mobile-navbar ul {
-    margin-top: 10rem;
+    margin-top: 9rem;
     list-style: none;
+    padding-left: 0;
 }
 
 #mobile-navbar ul li {
@@ -496,7 +499,7 @@ upicon a svg:hover {
 #mobile-navbar ul li a {
     text-decoration: none;
     color: var(--grey);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.5s ease-in;

@@ -75,7 +75,6 @@ input:focus {
 .video-container h1 {
     position: absolute;
     top: 10rem;
-    text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 5rem;
